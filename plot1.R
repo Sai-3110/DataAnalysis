@@ -6,9 +6,6 @@ subpower <- subset(power,power$Date=="1/2/2007" | power$Date =="2/2/2007")
 #calling the basic plot function
 hist(as.numeric(as.character(subpower$Global_active_power)),col="red",main="Global Active Power",xlab="Global Active Power(kilowatts)")
 
-# annotating graph
-title(main="Global Active Power")
-
 #copying to png
 dev.copy(png, filename="plot1.png")
 dev.off()
